@@ -15,7 +15,7 @@
 2) 폭력적 이미지
     - 폭력적 이미지(500) / 비폭력적 이미지(511) 
 
-### Dataset 소스
+### Dataset 출처
 1) 선정적 이미지 : adult;Pornography Use;image classification method;Computer Vision;Image Processing;Pattern Recognition and Data Mining (https://figshare.com/articles/dataset/Adult_content_dataset/13456484 )
 2) 폭력적 이미지 : 
 
