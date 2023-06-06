@@ -63,11 +63,11 @@
 ### 폭력성: 폭력/비폭력 분류
 <div style="display: flex; justify-content: space-between;">
   <figure>
-    <img alt="스크린샷 2023-06-06 오후 9 04 54" src="https://github.com/selfrescue/selfrescue/assets/130124454/0867fae7-4eeb-4343-a336-edcd85997d1f" style="width: 30%;">
+    <img alt="스크린샷 2023-06-06 오후 9 05 17" src="https://github.com/selfrescue/selfrescue/assets/130124454/e78e287a-ac39-4f98-abff-741341014808" style="width: 30%;">
     <figcaption>손실값</figcaption>
   </figure>
   <figure>
-    <img alt="스크린샷 2023-06-06 오후 9 05 17" src="https://github.com/selfrescue/selfrescue/assets/130124454/e78e287a-ac39-4f98-abff-741341014808" style="width: 30%;">
+      <img alt="스크린샷 2023-06-06 오후 9 04 54" src="https://github.com/selfrescue/selfrescue/assets/130124454/0867fae7-4eeb-4343-a336-edcd85997d1f" style="width: 30%;">
     <figcaption>정확도</figcaption>
   </figure>
 </div>
