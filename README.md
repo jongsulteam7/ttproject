@@ -1,7 +1,7 @@
 # jongsulteam7
 
 <details>
-<summary>commit log</summary>
+<summary>commit log</summary><br>
 [0511] 혜연 테스트용 틱톡 비디오 업로드 완료
 
 1) tiktok videos > 건전, 선정, 폭력 폴더로 구분
@@ -35,7 +35,8 @@
 [0602] 혜연 비노출 이미지 데이터셋 보완: 수량 500개로 조정 (노출 심한 이미지 삭제 및 일반 복장 착용 이미지 추가)     
     
 [0606] 윤아 연동 로그 파일 소스 + csv 파일 '로그 연동 파일' 폴더로 정리    
-도현 동영상 테스트 파일 업로드
+도현 동영상 테스트 파일 업로드 <br>
+인경 cnn_sequential 최종 모델 업로드
 </details>
 
 
