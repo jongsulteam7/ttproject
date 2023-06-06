@@ -1,5 +1,5 @@
 <details>
-<summary> #Issue : Image truncated, accuracy</summary><br>
+<summary> 📌 Issue : Image truncated, accuracy</summary><br>
 
 - try1. PIL 라이브러리로 파일 손상 검사 돌려봄 → 이미지 손상은 X
 - try2. `ImageFile.LOAD_TRUNCATED_IMAGES = True` 설정
@@ -35,7 +35,6 @@
         라고 합니다.. </details><br>
 
 > ### 두가지 모델 비교 
-<br>
 
 - **Sequential 모델:**
     - Keras라는 딥러닝 라이브러리에서 제공하는 API로, 간단하고 순차적인 딥러닝 모델을 만들 수 있게 해준다.
@@ -56,28 +55,28 @@
 
 > 💡 Training Value
 >- loss: 훈련 손실 값
-현재 배치에서 모델이 예측한 출력과 실제 레이블 사이의 차이 → 모델의 적합성
+현재 배치에서 모델이 예측한 출력과 실제 레이블 사이의 차이 → `모델의 적합성`
 >- accuracy: 훈련 정확도
->현재 배치에서 모델이 올바르게 분류한 샘플의 비율 → 모델의 성능
+>현재 배치에서 모델이 올바르게 분류한 샘플의 비율 → `모델의 성능`
 >- val_loss: 검증 손실 값 
-검증 데이터셋에서 모델의 예측과 실제 레이블 사이의 차이 → 일반화 성능
+검증 데이터셋에서 모델의 예측과 실제 레이블 사이의 차이 → `일반화 성능`
 >- val_accuracy: 검증 정확도
-검증 데이터셋에서 모델이 올바르게 분류한 샘플의 비율 → 일반화 성능
+검증 데이터셋에서 모델이 올바르게 분류한 샘플의 비율 → `일반화 성능`
 >- lr: 학습률(learning rate)
 모델이 가중치를 업데이트하는 속도를 조절하는 하이퍼파라미터
 
 ### 선정성: 노출/비노출 분류
 <div style="display: flex; justify-content: space-between;">
   <figure>
-    <img src="./sequential/img/노출/노출loss.png" style="width: 100%;">
+    <img src="./sequential/img/노출/노출loss.png" style="width: 30%;">
     <figcaption>손실값</figcaption>
   </figure>
   <figure>
-    <img src="./sequential/img/노출/노출accur.png" style="width: 100%;">
+    <img src="./sequential/img/노출/노출accur.png" style="width: 30%;">
     <figcaption>정확도</figcaption>
   </figure>
   <figure>
-    <img src="./sequential/img/노출/노출overfit.png" style="width: 100%;">
+    <img src="./sequential/img/노출/노출overfit.png" style="width: 30%;">
     <figcaption>과적합</figcaption>
   </figure>
 </div>
@@ -87,15 +86,15 @@
 ### 선정성: 관계/비관계 분류 
 <div style="display: flex; justify-content: space-between;">
   <figure>
-    <img src="./sequential/img/관계/관계loss.png" style="width: 100%;">
+    <img src="./sequential/img/관계/관계loss.png" style="width: 30%;">
     <figcaption>손실값</figcaption>
   </figure>
   <figure>
-    <img src="./sequential/img/관계/관계accur.png" style="width: 100%;">
+    <img src="./sequential/img/관계/관계accur.png" style="width: 30%;">
     <figcaption>정확도</figcaption>
   </figure>
   <figure>
-    <img src="./sequential/img/관계/관계overfit.png" style="width: 100%;">
+    <img src="./sequential/img/관계/관계overfit.png" style="width: 30%;">
     <figcaption>과적합</figcaption>
   </figure>
 </div>
@@ -105,15 +104,15 @@
 ### 폭력성: 폭력/비폭력 분류
 <div style="display: flex; justify-content: space-between;">
   <figure>
-    <img src="./sequential/img/폭력/폭력loss.png" style="width: 100%;">
+    <img src="./sequential/img/폭력/폭력loss.png" style="width: 30%;">
     <figcaption>손실값</figcaption>
   </figure>
   <figure>
-    <img src="./sequential/img/폭력/폭력accur.png" style="width: 100%;">
+    <img src="./sequential/img/폭력/폭력accur.png" style="width: 30%;">
     <figcaption>정확도</figcaption>
   </figure>
   <figure>
-    <img src="./sequential/img/폭력/폭력overfit.png" style="width: 100%;">
+    <img src="./sequential/img/폭력/폭력overfit.png" style="width: 30%;">
     <figcaption>과적합</figcaption>
   </figure>
 </div>
