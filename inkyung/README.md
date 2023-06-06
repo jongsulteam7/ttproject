@@ -50,14 +50,70 @@
     - VGG16은 작은 필터 크기(3x3)를 사용하여 깊은 네트워크를 구성하고, 많은 필터(총 16개의 레이어에서 13개의 합성곱 레이어)를 사용하여 다양한 이미지 특징을 추출한다.
     - VGG16은 ImageNet 데이터셋으로 사전 훈련된 가중치를 제공하므로, 전이 학습(Transfer Learning)에 많이 사용된다.
 
+<br><br>
 
 # 최종 모델
 
-## 선정성: 노출/비노출 분류
+> 💡 Training Value
+>- loss: 훈련 손실 값
+현재 배치에서 모델이 예측한 출력과 실제 레이블 사이의 차이 → 모델의 적합성
+>- accuracy: 훈련 정확도
+>현재 배치에서 모델이 올바르게 분류한 샘플의 비율 → 모델의 성능
+>- val_loss: 검증 손실 값 
+검증 데이터셋에서 모델의 예측과 실제 레이블 사이의 차이 → 일반화 성능
+>- val_accuracy: 검증 정확도
+검증 데이터셋에서 모델이 올바르게 분류한 샘플의 비율 → 일반화 성능
+>- lr: 학습률(learning rate)
+모델이 가중치를 업데이트하는 속도를 조절하는 하이퍼파라미터
 
+### 선정성: 노출/비노출 분류
+<div style="display: flex; justify-content: space-between;">
+  <figure>
+    <img src="./sequential/img/노출/노출loss.png" style="width: 100%;">
+    <figcaption>손실값</figcaption>
+  </figure>
+  <figure>
+    <img src="./sequential/img/노출/노출accur.png" style="width: 100%;">
+    <figcaption>정확도</figcaption>
+  </figure>
+  <figure>
+    <img src="./sequential/img/노출/노출overfit.png" style="width: 100%;">
+    <figcaption>과적합</figcaption>
+  </figure>
+</div>
 
+<br>
 
-## 선정성: 관계/비관계 분류 
+### 선정성: 관계/비관계 분류 
+<div style="display: flex; justify-content: space-between;">
+  <figure>
+    <img src="./sequential/img/관계/관계loss.png" style="width: 100%;">
+    <figcaption>손실값</figcaption>
+  </figure>
+  <figure>
+    <img src="./sequential/img/관계/관계accur.png" style="width: 100%;">
+    <figcaption>정확도</figcaption>
+  </figure>
+  <figure>
+    <img src="./sequential/img/관계/관계overfit.png" style="width: 100%;">
+    <figcaption>과적합</figcaption>
+  </figure>
+</div>
 
+<br>
 
-## 폭력성: 폭력/비폭력 분류
+### 폭력성: 폭력/비폭력 분류
+<div style="display: flex; justify-content: space-between;">
+  <figure>
+    <img src="./sequential/img/폭력/폭력loss.png" style="width: 100%;">
+    <figcaption>손실값</figcaption>
+  </figure>
+  <figure>
+    <img src="./sequential/img/폭력/폭력accur.png" style="width: 100%;">
+    <figcaption>정확도</figcaption>
+  </figure>
+  <figure>
+    <img src="./sequential/img/폭력/폭력overfit.png" style="width: 100%;">
+    <figcaption>과적합</figcaption>
+  </figure>
+</div>
