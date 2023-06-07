@@ -30,6 +30,8 @@ count = 0
 
 while(video.isOpened()):
     ret, image = video.read()
+    if not ret:
+        break
     if(int(video.get(1)) % fps == 0): #앞서 불러온 fps 값을 사용하여 1초마다 추출
         cv2.imwrite(filepath[:-4] + "/frame%d.jpg" % count, image)
         print('Saved frame number :', str(int(video.get(1))))
