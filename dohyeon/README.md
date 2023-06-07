@@ -18,6 +18,29 @@
 
 <br><br>
 
+## 🌟 데이터 Augmentation
+
+```python
+# 트레이닝 데이터의 제너레이터 설정
+train_datagen=ImageDataGenerator(
+			rotation_range=15,
+			rescale=1./255,
+			shear_range=0.1,
+			zoom_range=0.2,
+			horizontal_flip=True,
+			width_shift_range=0.1,
+			height_shift_range=0.1)
+```
+
+1. `rotation_range`: 지정된 각도 범위 내에서 이미지를 -15도부터 +15도까지 무작위로 회전시키기
+2. `rescale`: 이미지의 픽셀 값을 0과 1 사이로 조정하여 모델의 성능을 개선하고 학습 속도를 향상시키는 데 도움을 줄 수 있다.
+3. `shear_range`: 이미지를  -0.1부터 +0.1까지 무작위로 전단 변형시켜 이미지를 기울이는 효과를 주어 다양한 각도의 관점에서 객체를 인식할 수 있도록 한다
+4. `zoom_range`: 이미지를 0.8배에서 1.2배까지 무작위로  확대/축소하여 다양한 크기와 해상도의 이미지를 처리할 수 있도록 한다. 
+5. `horizontal_flip`: 50%의 확률로 이미지를 수평으로 뒤집어 좌우 대칭성을 고려할 수 있도록 한다.
+6. `width_shift_range` / `height_shift_range`: 이미지를 -0.1부터 +0.1까지 무작위로수평 및 수직으로 이동시켜 이미지의 위치 변화에 대응할 수 있도록 한다.
+
+<br>
+    
 # 최종 모델
 
 > 💡 Training Value
@@ -33,41 +56,22 @@
 모델이 가중치를 업데이트하는 속도를 조절하는 하이퍼파라미터
 
 ### 선정성: 노출/비노출 분류
-<div style="display: flex; justify-content: space-between;">
-  <figure>
-  <img alt="스크린샷 2023-06-06 오후 9 00 25" src="https://github.com/selfrescue/selfrescue/assets/130124454/30759e76-08d1-4434-9e9e-36725c4d99ce" style='width:30%;'>
-    <figcaption>손실값</figcaption>
-  </figure>
-  <figure>
-  <img alt="스크린샷 2023-06-06 오후 8 56 53" src="https://github.com/selfrescue/selfrescue/assets/130124454/2e4a8de8-163d-4641-88f5-c0ab4964df56" style='width: 30%;'>
-    <figcaption>정확도</figcaption>
-  <figure>
-</div>
+| ![손실값](./img/노출/노출loss.png) | ![정확도](./img/노출/노출accur.png) |
+|:---:|:---:|
+| 손실값 | 정확도 |
 
 <br>
 
 ### 선정성: 관계/비관계 분류 
-<div style="display: flex; justify-content: space-between;">
-  <figure>
-    <img alt="스크린샷 2023-06-06 오후 9 01 51" src="https://github.com/selfrescue/selfrescue/assets/130124454/9e4becda-adb9-4fab-ba65-e326047acfdd" style='width:30%;'>
-    <figcaption>손실값</figcaption>
-  </figure>
-  <figure>
-    <img alt="스크린샷 2023-06-06 오후 9 01 41" src="https://github.com/selfrescue/selfrescue/assets/130124454/e1aed142-4b14-46b5-b79e-0fbc631bd109" style='width: 30%;'>
-    <figcaption>정확도</figcaption>
-  </figure>
-</div>
+| ![손실값](./img/관계/관계loss.png) | ![정확도](./img/관계/관계accur.png) |
+|:---:|:---:|
+| 손실값 | 정확도 |
+
 
 <br>
 
 ### 폭력성: 폭력/비폭력 분류
-<div style="display: flex; justify-content: space-between;">
-  <figure>
-    <img alt="스크린샷 2023-06-06 오후 9 05 17" src="https://github.com/selfrescue/selfrescue/assets/130124454/e78e287a-ac39-4f98-abff-741341014808" style="width: 30%;">
-    <figcaption>손실값</figcaption>
-  </figure>
-  <figure>
-      <img alt="스크린샷 2023-06-06 오후 9 04 54" src="https://github.com/selfrescue/selfrescue/assets/130124454/0867fae7-4eeb-4343-a336-edcd85997d1f" style="width: 30%;">
-    <figcaption>정확도</figcaption>
-  </figure>
-</div>
+| ![손실값](./img/폭력/폭력loss.png) | ![정확도](./img/폭력/폭력accur.png) |
+|:---:|:---:|
+| 손실값 | 정확도 |
+
