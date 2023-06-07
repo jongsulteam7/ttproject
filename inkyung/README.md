@@ -50,7 +50,7 @@
     - VGG16은 ImageNet 데이터셋으로 사전 훈련된 가중치를 제공하므로, 전이 학습(Transfer Learning)에 많이 사용된다.
 
 <br><br>
-## 데이터 증강
+## 🌟 데이터 Augmentation
 
 ```python
 # 트레이닝 데이터의 제너레이터 설정
@@ -87,7 +87,7 @@ train_datagen=ImageDataGenerator(
 >- lr: 학습률(learning rate)
 모델이 가중치를 업데이트하는 속도를 조절하는 하이퍼파라미터
 
-<br>
+<br><br>
 
 ### 선정성: 노출/비노출 분류
 | ![손실값](./sequential/img/노출/노출loss.png) | ![정확도](./sequential/img/노출/노출accur.png) | ![과적합](./sequential/img/노출/노출overfit.png) |
