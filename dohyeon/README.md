@@ -22,22 +22,16 @@
 
 ```python
 # 트레이닝 데이터의 제너레이터 설정
-train_datagen=ImageDataGenerator(
-			rotation_range=15,
-			rescale=1./255,
-			shear_range=0.1,
-			zoom_range=0.2,
-			horizontal_flip=True,
-			width_shift_range=0.1,
-			height_shift_range=0.1)
+train_image_generator = ImageDataGenerator(rescale=1./255,
+                                           rotation_range=15,
+                                           zoom_range=0.2,
+                                           horizontal_flip=True,
+                                           )
 ```
-
-1. `rotation_range`: 지정된 각도 범위 내에서 이미지를 -15도부터 +15도까지 무작위로 회전시키기
-2. `rescale`: 이미지의 픽셀 값을 0과 1 사이로 조정하여 모델의 성능을 개선하고 학습 속도를 향상시키는 데 도움을 줄 수 있다.
-3. `shear_range`: 이미지를  -0.1부터 +0.1까지 무작위로 전단 변형시켜 이미지를 기울이는 효과를 주어 다양한 각도의 관점에서 객체를 인식할 수 있도록 한다
-4. `zoom_range`: 이미지를 0.8배에서 1.2배까지 무작위로  확대/축소하여 다양한 크기와 해상도의 이미지를 처리할 수 있도록 한다. 
-5. `horizontal_flip`: 50%의 확률로 이미지를 수평으로 뒤집어 좌우 대칭성을 고려할 수 있도록 한다.
-6. `width_shift_range` / `height_shift_range`: 이미지를 -0.1부터 +0.1까지 무작위로수평 및 수직으로 이동시켜 이미지의 위치 변화에 대응할 수 있도록 한다.
+1. `rescale`: 이미지의 픽셀 값을 0과 1 사이로 조정하여 모델의 성능을 개선하고 학습 속도를 향상시키는 데 도움을 줄 수 있다.
+2. `rotation_range`: 지정된 각도 범위 내에서 이미지를 -15도부터 +15도까지 무작위로 회전시키기
+3. `zoom_range`: 이미지를 0.8배에서 1.2배까지 무작위로 확대/축소하여 다양한 크기와 해상도의 이미지를 처리할 수 있도록 한다. 
+4. `horizontal_flip`: 50%의 확률로 이미지를 수평으로 뒤집어 좌우 대칭성을 고려할 수 있도록 한다.
 
 <br>
     
