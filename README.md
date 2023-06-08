@@ -168,5 +168,6 @@
 
 
 ## 📝 프로젝트
-여기에 ppt 페이지 중 구조 페이지 들어갈 예정
+![제목을 입력해주세요_-004](https://github.com/jongsulteam7/ttproject/assets/130124454/9edd8791-80ad-43f1-9d25-595bacc93ded)
+
 
