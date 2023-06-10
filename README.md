@@ -57,8 +57,6 @@
 
 저희는 SNS 앱 <img src="https://img.shields.io/badge/tiktok-000000?style=flat&logo=tiktok&logoColor=white"/>에서의 *선정적이거나, 폭력적인 영상들을 필터링 하는 모델*을 주제로 프로젝트를 진행하였습니다.
 
-### [Notion 페이지 링크](https://spiral-moose-c33.notion.site/7e97e0c8815d4acf815ffa0c885348a4?pvs=4)
-
 ## 🧑‍🤝‍🧑 팀원
 7조 팀원들을 소개합니다( ˃ᴗ˂ )
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -173,7 +171,9 @@
     </td>
   </tr>
 </table>
-
+  
+#### [Notion 페이지 링크](https://spiral-moose-c33.notion.site/7e97e0c8815d4acf815ffa0c885348a4?pvs=4)
+#### [드라이브 링크](https://drive.google.com/drive/folders/1BYTg3gTPLE2lTy0RrNSjG9CHcRoApqJN?usp=drive_link) : 모델의 크기가 커 깃허브에 업로드가 불가하기에 설계한 모델은 깃허브가 아닌 드라이브에 업로드하였습니다. 
 
 ## 📝 모델 구조
 ![제목을 입력해주세요_-004](https://github.com/jongsulteam7/ttproject/assets/130124454/9b82aee0-54e2-48ce-98b4-9aad679f68a9)
