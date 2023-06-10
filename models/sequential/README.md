@@ -90,7 +90,7 @@ train_datagen=ImageDataGenerator(
 <br><br>
 
 ### 선정성: 노출/비노출 분류
-| ![손실값](./sequential/img/노출/노출loss.png) | ![정확도](./sequential/img/노출/노출accur.png) | ![과적합](./sequential/img/노출/노출overfit.png) |
+| ![손실값](./img/노출/노출loss.png) | ![정확도](./img/노출/노출accur.png) | ![과적합](./img/노출/노출overfit.png) |
 |:---:|:---:|:---:|
 | 손실값 | 정확도 | 과적합 |
 
@@ -98,7 +98,7 @@ train_datagen=ImageDataGenerator(
 <br>
 
 ### 선정성: 관계/비관계 분류 
-| ![손실값](./sequential/img/관계/관계loss.png) | ![정확도](./sequential/img/관계/관계accur.png) | ![과적합](./sequential/img/관계/관계overfit.png) |
+| ![손실값](./img/관계/관계loss.png) | ![정확도](./img/관계/관계accur.png) | ![과적합](./img/관계/관계overfit.png) |
 |:---:|:---:|:---:|
 | 손실값 | 정확도 | 과적합 |
 
@@ -106,6 +106,6 @@ train_datagen=ImageDataGenerator(
 <br>
 
 ### 폭력성: 폭력/비폭력 분류
-| ![손실값](./sequential/img/폭력/폭력loss.png) | ![정확도](./sequential/img/폭력/폭력accur.png) | ![과적합](./sequential/img/폭력/폭력overfit.png) |
+| ![손실값](./img/폭력/폭력loss.png) | ![정확도](./img/폭력/폭력accur.png) | ![과적합](./img/폭력/폭력overfit.png) |
 |:---:|:---:|:---:|
 | 손실값 | 정확도 | 과적합 |
